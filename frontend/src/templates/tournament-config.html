@@ -1,0 +1,92 @@
+<div class="login-container">
+
+	<!-- Côté gauche : Image -->
+	<div class="login-form">
+		<!-- <img src="../img/tournament_5.png" alt="Tournament" /> -->
+		 <!-- Liste des joueurs -->
+		<div class="login-form-content">
+			<div class="tournament-players-list">
+				<div class="players-top">
+					<h2 id="player-count-info">
+						<span id="player-count-number"></span> <span id="player-label"></span>
+					</h2>
+					<p class="subtitle" id="tournament-subtitle-text">Jouez à 2, 4 ou 8 joueurs max</p>
+					<div id="players-list-content"></div>
+				</div>
+
+				<a href="#" id="reset-tournament" data-text="Réinitialiser le tournoi">Réinitialiser le tournoi</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Côté droit : Formulaire -->
+	<div class="login-form">
+
+		<div class="login-form-content">
+
+			<h2 id="tournament-config-title">Configuration</h2>
+			<p class="subtitle" id="tournament-challenge-text">Défiez vos amis</p>
+
+			<form id="add-player-form">
+
+				<!-- Joueur IA Toggle + Dropdown -->
+				<div class="form-group">
+
+					<label id="tournament-ai-label">Joueur IA</label>
+					<div class="tournament-ai-row">
+
+						<div class="control-group">
+							<label class="toggle-switch">
+								<input type="checkbox" id="ai-toggle">
+								<span class="toggle-slider"></span>
+							</label>
+						</div>
+
+						<div class="control-group">
+							<select id="ai-difficulty-select" class="dropdown" disabled>
+								<option value="" disabled selected id="tournament-difficulty-option">Difficulté</option>
+								<option value="easy" id="tournament-easy-option">Facile</option>
+								<option value="medium" id="tournament-medium-option">Moyen</option>
+								<option value="hard" id="tournament-hard-option">Difficile</option>
+							</select>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Pseudo -->
+				<div class="form-group">
+					<label for="player-alias" id="tournament-nickname-label">Votre pseudo *</label>
+					<input
+						type="text"
+						id="player-alias"
+						name="player-alias"
+						placeholder="Entrez votre pseudo"
+						maxlength="20"
+						autocomplete="off"
+						required
+					/>
+				</div>
+
+				<!-- Bouton Ajouter -->
+				<button type="submit" class="btn-login" id="tournament-add-player-btn">Ajouter joueur</button>
+
+			</form>
+
+
+
+			<!-- Bouton Commencer -->
+			<div id="tournament-actions-container">
+				<!-- Sera injecté dynamiquement -->
+			</div>
+
+			<!-- Bouton Réinitialiser -->
+			<!--  <p id="reset-tournament" class="signup-link">Réinitialiser le tournoi</p>
+ -->
+			<!-- <button id="reset-tournament" class="btn-oauth btn-reset">Réinitialiser le tournoi</button> -->
+
+
+
+		</div>
+	</div>
+</div>

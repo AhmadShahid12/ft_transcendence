@@ -1,0 +1,63 @@
+<!-- Barre de contrôle fixe en haut -->
+<div class="game-control-bar">
+
+	<div class="control-group" id="match-info-container" style="display: none;">
+		<span class="match-info-label" id="match-info"></span>
+	</div>
+
+	<div class="control-group">
+		<span class="control-label" id="ai-mode-label">Mode IA</span>
+		<label class="toggle-switch">
+			<input type="checkbox" id="mode-toggle">
+			<span class="toggle-slider"></span>
+		</label>
+	</div>
+
+	<div class="control-group">
+		<select id="difficulty-select" class="dropdown" disabled>
+			<option value="" disabled selected id="difficulty-placeholder">Difficulté</option>
+			<option value="easy" id="difficulty-easy">Facile</option>
+			<option value="medium" id="difficulty-medium">Moyen</option>
+			<option value="hard" id="difficulty-hard">Difficile</option>
+		</select>
+	</div>
+
+
+	<div class="game-status">
+		<!-- Messages dynamiques (centrés) -->
+		<div class="status-messages" id="game-status">
+			<span class="status-message"></span>
+		</div>
+		<!-- Commandes (alignées à droite) -->
+		<div class="status-controls" id="game-controls">
+			<span class="controls-text"></span>
+		</div>
+	</div>
+
+</div>
+
+<!-- Canvas du jeu (prend tout l'espace restant) -->
+<div class="game-canvas-container">
+	<canvas id="pong-canvas"></canvas>
+</div>
+
+<!-- Modal entrainement -->
+<div id="victoryModal" class="modal-overlay" style="display: none;">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <h2 class="modal-title">Fin du match</h2>
+	<p class="modal-joueur"><span id="winnerName"></span> a gagné !</p>
+    <p class="modal-score" id="modalScore"></p>
+    <a href="/game" data-route class="btn btn-tertiary">Rejouer</a>
+	<a href="/" data-route class="btn btn-tertiary">Accueil</a>
+  </div>
+</div>
+
+<!-- Modal tournoi -->
+<div id="tournamentVictoryModal" class="modal-overlay" style="display: none;">
+  <div class="modal-content">
+    <h2 class="modal-title">Fin du match</h2>
+    <p class="modal-joueur" id="tournamentMessage"></p>
+    <button id="backToTournament" class="btn btn-tertiary">Retourner au tournoi</button>
+  </div>
+</div>

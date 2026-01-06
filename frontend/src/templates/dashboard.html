@@ -1,0 +1,166 @@
+<div class="dashboard">
+	<!-- Stats du jour -->
+
+	<div class="bento-grid">
+
+				<!-- TOP 3 -->
+		<div class="card">
+			<div class="stat-item">
+				<div class="top3">
+					<div class="top">TOP 3</div>
+					<div class="podium-container">
+						<div class="podium-avatar" id="rank-1-avatar"></div>
+						<div class="avatar_name">
+							<div class="podium-name" id="rank-1-name">-</div>
+							<div class="podium-points" id="rank-1-points">0 pts</div>
+						</div>
+					</div>
+					<div class="podium-container">
+						<div class="podium-avatar" id="rank-2-avatar"></div>
+						<div class="avatar_name">
+							<div class="podium-name" id="rank-2-name">-</div>
+							<div class="podium-points" id="rank-2-points">0 pts</div>
+						</div>
+					</div>
+					<div class="stat-item">
+						<div class="podium-container">
+							<div class="podium-avatar" id="rank-3-avatar"></div>
+							<div class="avatar_name">
+								<div class="podium-name" id="rank-3-name">-</div>
+								<div class="podium-points" id="rank-3-points">0 pts</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CTA -->
+		<div class="card">
+			<span class="cta-dash" id="dashboard-cta">Défiez<br>vos amis<br>en<br>ligne</span>
+			<div class="play-button-dash">
+				<a href="/online" data-route class="btn white-btn" id="dashboard-play-button">Jouer</a>
+			</div>
+		</div>
+
+		<!-- TOTAL MATCH -->
+		<div class="card">
+			<div class="stat-item">
+				<div class="stat-label-match" id="dashboard-label-matches">Matchs joués</div>
+				<div class="stat-value">{{TOTAL_MATCHES}}</div>
+				<div class="wins-losses">{{WINS}} {{WINS_LABEL}}</div>
+				<div class="wins-losses">{{LOSSES}} {{LOSSES_LABEL}}</div>
+			</div>
+		</div>
+
+		<!-- VICTOIRES -->
+		<div class="card">
+			<div class="stat-item">
+				<div class="stat-label-vict" id="dashboard-label-victories">Victoires</div>
+				<div class="donut-chart-container">
+					<svg width="120" height="120" viewBox="0 0 120 120">
+						<defs>
+							<linearGradient id="winGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+								<stop offset="0%" />
+								<stop offset="100%" />
+							</linearGradient>
+						</defs>
+						<circle cx="60" cy="60" r="50" />
+						<circle id="win-circle" cx="60" cy="60" r="50" stroke-dashoffset="314.16" />
+						<text id="win-text" x="60" y="60">{{WIN_PERCENT}}%</text>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<!-- PERFORMANCES -->
+		<div class="card">
+			<div class="stat-item">
+				<div class="stat-label-perf" id="dashboard-label-performances">Performances</div>
+				<div class="chart-container">
+					<canvas id="ranking-chart"></canvas>
+				</div>
+			</div>
+		</div>
+
+		<!-- AMIS + PENDING FUSIONNÉS -->
+		<div class="card">
+
+			<div class="card-header">
+				<div class="stat-label-ami" id="dashboard-label-friends">Amis (
+					<span id="friends-count" class="friends-count">{{FRIENDS_COUNT}}</span> )
+				</div>
+			</div>
+
+			<div class="friends-search-wrapper">
+				<input
+					type="text"
+					id="dashboard-search-users"
+					placeholder="Rechercher un utilisateur..."
+				data-i18n-placeholder="dashboard.searchUser"
+					autocomplete="off"
+				/>
+				<div id="dashboard-search-results" class="dashboard-search-results"></div>
+			</div>
+
+			<!-- Nouveau conteneur scrollable -->
+			<div class="friends-pending-scroll">
+
+				<!-- Liste d'amis -->
+				<div id="friends-list-container">
+					<!-- Rempli par JS -->
+				</div>
+
+				<!-- Section demandes en attente -->
+				<div class="pending-section">
+					<div class="stat-label-pending" id="dashboard-label-pending">En attente (
+						<span class="pending-count">{{PENDING_COUNT}}</span> )
+					</div>
+
+					<div id="pending-requests-container">
+						<!-- Rempli par JS -->
+					</div>
+				</div>
+
+				<!-- Section demandes envoyées -->
+				<div class="pending-section">
+					<div class="stat-label-sent" id="dashboard-label-sent">Envoyées (
+						<span class="sent-count">0</span> )
+					</div>
+
+					<div id="sent-requests-container">
+						<!-- Rempli par JS -->
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+				<!-- HISTORIQUE DES MATCHS -->
+		<div class="card">
+			<div class="card-header">
+				<div class="stat-label-history" id="dashboard-label-history">HISTORIQUE</div>
+			</div>
+
+			<div id="match-history-container">
+				<!-- Rempli par JS -->
+			</div>
+		</div>
+
+		<!-- CTA -->
+<!-- 		<div class="card tall big-wide">
+			<span class="cta-dash">Défiez<br>vos amis<br>en<br>ligne</span>
+				<div class="play-button-dash">
+					<a href="/online" data-route class="btn white-btn">Jouer</a>
+				</div>
+		</div> -->
+
+
+
+
+
+	</div>
+
+
+</div>
