@@ -65,7 +65,7 @@ export class App
 		}
 
 		if (footerCredit) {
-			footerCredit.textContent = i18n.t('footer.credits', 'Transcendé par : sviallon - emmmarti - agilibert')
+			footerCredit.textContent = i18n.t('footer.credits', 'Transcendé par : sviallon - emmmarti - smorin - jowander')
 		}
 	}
 
