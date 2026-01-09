@@ -8,7 +8,7 @@ ft_transcendence est le projet final du cursus 42. C'est une application web com
 
 C'est un projet ambitieux qui m'a permis de mettre en pratique toutes les compétences acquises : développement full-stack, gestion de bases de données, WebSockets, Docker, et architecture microservices.
 
-## 🎮 Fonctionnalités
+## Fonctionnalités
 
 ### Jeu Pong
 - Jeu Pong en ligne en temps réel
@@ -38,7 +38,7 @@ C'est un projet ambitieux qui m'a permis de mettre en pratique toutes les compé
 - Métriques Prometheus
 - Logs centralisés avec Elasticsearch
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 ### Backend
 - **Node.js** avec Fastify
@@ -59,9 +59,10 @@ C'est un projet ambitieux qui m'a permis de mettre en pratique toutes les compé
 - **Grafana** pour la visualisation
 - **Elasticsearch** et **Logstash** pour les logs
 
-## 🚀 Installation
+## Installation
 
 ### Prérequis
+
 - Docker et Docker Compose
 - Node.js (pour le développement local)
 
@@ -85,8 +86,6 @@ DATABASE_URL=postgresql://user:password@db:5432/transcendence
 
 # JWT Secret
 JWT_SECRET=your_secret_key
-
-# Autres variables d'environnement...
 ```
 
 3. Lancez avec Docker :
@@ -98,7 +97,7 @@ docker-compose up --build
 
 L'application sera accessible sur `http://localhost`
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 ft_transcendence/
@@ -113,7 +112,7 @@ ft_transcendence/
 │   ├── src/
 │   │   ├── game/         # Jeu Pong
 │   │   ├── pages/        # Pages de l'application
-│   │   ├── components/   # Composants réutilisables
+│   │   ├── components/    # Composants réutilisables
 │   │   └── services/     # Services API
 │   └── Dockerfile
 ├── nginx/                # Configuration Nginx
@@ -122,20 +121,20 @@ ft_transcendence/
 └── docker-compose.yml    # Orchestration Docker
 ```
 
-## 🎯 Ce que j'ai appris
+## Ce que j'ai appris
 
-- **Architecture full-stack** : Développement d'une application complète de A à Z
-- **WebSockets** : Communication temps réel pour le jeu et le chat
-- **Docker** : Containerisation et orchestration avec Docker Compose
-- **Microservices** : Architecture modulaire avec services séparés
-- **TypeScript** : Développement frontend typé
-- **Gestion de bases de données** : Migrations, seeds, relations complexes
-- **OAuth** : Intégration avec l'API 42
-- **Authentification sécurisée** : JWT, 2FA, gestion des sessions
-- **Monitoring** : Mise en place d'un système de monitoring complet
-- **DevOps** : Configuration Nginx, reverse proxy, SSL
+- Développement d'une application complète de A à Z
+- Communication temps réel avec WebSockets pour le jeu et le chat
+- Containerisation et orchestration avec Docker Compose
+- Architecture modulaire avec services séparés
+- Développement frontend typé avec TypeScript
+- Migrations, seeds, relations complexes avec PostgreSQL
+- Intégration avec l'API 42 via OAuth
+- Authentification sécurisée : JWT, 2FA, gestion des sessions
+- Mise en place d'un système de monitoring complet
+- Configuration Nginx, reverse proxy, SSL
 
-## 🎮 Utilisation
+## Utilisation
 
 Une fois l'application lancée :
 
@@ -145,13 +144,13 @@ Une fois l'application lancée :
 4. **Tournois** : Participez ou créez des tournois
 5. **Chat** : Discutez avec les autres joueurs
 
-## 📊 Monitoring
+## Monitoring
 
 Accédez aux dashboards :
 - **Grafana** : `http://localhost:3001`
 - **Prometheus** : `http://localhost:9090`
 
-## 🔒 Sécurité
+## Sécurité
 
 - Authentification OAuth 42
 - Authentification à deux facteurs
@@ -160,7 +159,7 @@ Accédez aux dashboards :
 - Protection CSRF
 - HTTPS en production
 
-## 📝 Note importante
+## Note importante
 
 Le fichier `.env` n'est pas inclus dans le repository pour des raisons de sécurité. Vous devez le créer localement avec vos propres credentials.
 
